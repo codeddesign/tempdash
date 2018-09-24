@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "bootstrap4": "0.0.1-security",
+        "element-ui": "^2.4.7",
         "express": "^4.16.3",
         "moment": "^2.22.2",
         "provinces": "^1.11.0",

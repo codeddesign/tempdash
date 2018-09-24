@@ -40,13 +40,13 @@
                 </div>
                 <div class="date-range-section">
                     <div id="layout_date_selector" class="dates">
-                        <ul>
-                            <li v-bind:class="{selected: selected_range === 'yesterday'}"><a v-on:click="selectRange($event, 'yesterday')" href="">Yesterday</a> <div class="disc"></div></li>
-                            <li v-bind:class="{selected: selected_range === 'last7'}"><a v-on:click="selectRange($event, 'last7')" href="">Last 7</a> <div class="disc"></div></li>
-                            <li v-bind:class="{selected: selected_range === 'last30'}"><a v-on:click="selectRange($event, 'last30')" href="">Last 30</a> <div class="disc"></div></li>
-                            <li v-bind:class="{selected: selected_range === 'thisyear'}"><a v-on:click="selectRange($event, 'thisyear')" href="">This Year</a> <div class="disc"></div></li>
-                            <li v-on:click="doActivateTimeframe($event)"><a href="">Enter Timeframe</a></li>
-                        </ul>
+                        <el-date-picker type="daterange" align="right" unlink-panels
+                        format="MM-dd-yyyy" value-format="yyyy-MM-dd"
+                        start-placeholder="Start date" end-placeholder="End date" range-separator="-"
+                        v-model="picker.selection" 
+                        :picker-options="picker.options"
+                        @change="picked">
+                        />
                     </div>
                     <div v-cloak id="live_toggle" class="live-toggle">
                         <span class="label">Live</span> <img v-on:click="toggle" v-bind:src="is_live ? '/img/icons/on_switch.svg' : '/img/icons/off_switch.svg'"/>
