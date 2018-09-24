@@ -1,0 +1,338 @@
+#create_edit_user {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 1000;
+  padding-top: 5%;
+  display: none;
+
+  .error {
+    position: absolute;
+    bottom: 27px;
+    left: 68px;
+    color: #e9faff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  img.checkbox {
+    max-width: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .content-area {
+    background: #35c3db;
+    background: -moz-linear-gradient(328deg, #8beeff 0%, #35c3db 48%, #b3f4ff 100%);
+    background: -webkit-linear-gradient(328deg, #8beeff 0%, #35c3db 48%, #b3f4ff 100%);
+    background: linear-gradient(328deg, #8beeff 0%, #35c3db 48%, #b3f4ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c9f6fe", endColorstr="#c9f6fe", GradientType=1);
+    color: white;
+    width: 738px;
+    height: 590px;
+    margin: 0 auto;
+    box-shadow: -2px 3px 4px rgba(0, 0, 0, 0.15);
+    position: relative;
+
+    .save-button {
+      background-color: #f4c257;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      bottom: 52px;
+      right: 139px;
+      padding: 6px 43px;
+      font-size: 19px;
+      -webkit-appearance: none;
+      border: none;
+      border-radius: 7px;
+      box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    h4 {
+      font-family: "Open Sans Thin", sans-serif;
+      font-size: 20px;
+      bottom: 50px;
+      left: 70px;
+      position: absolute;
+
+      a.cancel {
+        font-family: "Open Sans Bold", sans-serif;
+        font-weight: bold;
+        color: white;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .data-section {
+      top: 392px;
+      position: absolute;
+      left: 70px;
+      border-bottom: 3px solid white;
+      padding-bottom: 16px;
+      width: 75%;
+      height: 83px;
+
+      .input-button {
+        cursor: pointer;
+      }
+
+      .white-circle-text {
+        display: inline-block;
+        background-color: white;
+        border: 0;
+        border-radius: 40px;
+        padding: 5px 18px;
+        font-size: 21px;
+        font-family: "Open sans Thin", sans-serif;
+        color: #656565;
+        margin-right: 7px;
+        box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .data-input {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: none;
+        border: 0;
+        font-size: 26px;
+        color: #474b4f;
+        font-family: "Open Sans Thin", sans-serif;
+        margin-left: 40px;
+        width: 85%;
+        position: relative;
+        padding-top: 26px;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+
+      .move-forward, .move-back {
+        cursor: pointer;
+        position: absolute;
+        bottom: 20px;
+      }
+
+      .move-back {
+        left: 0;
+      }
+
+      .move-forward {
+        right: 0;
+      }
+    }
+
+    h3 {
+      position: absolute;
+      top: 115px;
+      left: 70px;
+      font-weight: 300;
+      font-size: 45px;
+      width: 50%;
+      font-family: "Open Sans Thin", sans-serif;
+    }
+
+    .pager {
+      position: absolute;
+      top: 55px;
+      left: 0;
+      width: 100%;
+
+      .pager-line {
+        width: 75%;
+        margin: 0 auto;
+        height: 2px;
+        border-top: 1px solid white;
+        position: relative;
+
+        .point {
+          position: absolute;
+          top: -6px;
+          width: 11px;
+          height: 11px;
+          background-color: white;
+          border-radius: 90px;
+          cursor: pointer;
+
+          .label {
+            position: absolute;
+            bottom: -40px;
+            font-size: 15px;
+            color: white;
+          }
+
+          &.first {
+            left: 0;
+
+            .label {
+              left: -14px;
+            }
+          }
+
+          &.second {
+            left: 16%;
+
+            .label {
+              left: -16px;
+            }
+          }
+
+          &.third {
+            left: 34%;
+
+            .label {
+              left: -12px;
+            }
+          }
+
+          &.fourth {
+            left: 55%;
+
+            .label {
+              left: -34px;
+            }
+          }
+
+          &.fifth {
+            left: 78%;
+
+            .label {
+              right: -40px;
+            }
+          }
+
+          &.sixth {
+            right: 0;
+
+            .label {
+              right: -20px;
+            }
+          }
+
+          &.selected {
+            width: 25px;
+            height: 25px;
+            top: -13px;
+            background-color: #f4c257;
+            box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.2);
+
+            .label {
+              bottom: -32px;
+              color: #393c40;
+            }
+
+            &.first {
+              .label {
+                left: -11px;
+              }
+            }
+
+            &.second {
+              .label {
+                left: -11px;
+              }
+            }
+
+            &.third {
+              .label {
+                left: -6px;
+              }
+            }
+
+            &.fourth {
+              .label {
+                left: -28px;
+              }
+            }
+
+            &.fifth {
+              .label {
+                left: -31px;
+              }
+            }
+
+            &.sixth {
+              .label {
+                left: -5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .page {
+
+      &.permissions {
+        .data-section {
+          top: 240px;
+          left: 70px;
+          padding-bottom: 16px;
+          width: 75%;
+          height: 235px;
+        }
+
+        .check-box-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          font-size: 16px;
+          padding-left: 75px;
+
+          li {
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      &.name {
+        .data-section {
+          .data-input {
+            width: 52%;
+          }
+        }
+      }
+
+      &.department {
+        h3 {
+          width: 72%;
+        }
+      }
+
+      &.review {
+        h3 {
+          width: 85%;
+        }
+
+        .data-section {
+          top: 190px;
+          left: 70px;
+          width: 75%;
+          height: 285px;
+          padding-left: 44px;
+          padding-right: 28px;
+
+          .permission {
+            display: inline-block;
+            margin-right: 10px;
+          }
+
+          .white-circle-text, .permission {
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  &.show {
+    display: block;
+  }
+}

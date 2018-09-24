@@ -1,0 +1,256 @@
+#auth {
+  display: flex;
+  height: 100vh;
+
+  .info-section {
+    width: calc(100% - 500px);
+    background-color: #1d2c31;
+    color: white;
+    position: relative;
+    background-image: url(/img/login-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .content {
+      position: absolute;
+      bottom: 105px;
+      width: 645px;
+      margin: 0 auto;
+      left: 46px;
+
+      .site-title {
+        font-size: 13px;
+
+        a {
+          color: white;
+        }
+      }
+
+      .about-section {
+        margin-bottom: 9px;
+        font-size: 13px;
+      }
+
+      .dividers {
+        margin-bottom: 16px;
+
+        .divider {
+          background-color: #68787b;
+          width: 45px;
+          height: 5px;
+          display: inline-block;
+          margin-right: 14px;
+
+          &.one {
+            background-color: #2f6a5d;
+          }
+
+          &.two {
+            background-color: #1e4e72;
+          }
+
+          &.three {
+            background-color: #635f2f;
+          }
+        }
+      }
+
+      .social-media-icons {
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 25px 0 0;
+
+          li {
+            display: inline-block;
+            margin-right: 10px;
+
+            a {
+              img {
+                width: 38px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form-section {
+    width: 500px;
+    background-color: white;
+    position: relative;
+
+    .form-title-area {
+      position: absolute;
+      width: 100%;
+      bottom: 26vh;
+
+      &.two-factor-verification {
+        bottom: 33.2vh;
+      }
+
+      .logo-section {
+        text-align: center;
+        margin-bottom: 30px;
+
+        img.logo {
+          max-width: 185px;
+          margin: 0 auto;
+        }
+
+        h2 {
+          font-size: 23px;
+          margin-top: 40px;
+        }
+      }
+
+      .login-form, .two-factor-form {
+        max-width: 83%;
+        margin: 0 auto;
+
+        .form-group.required {
+          label:after {
+            content: "*";
+          }
+        }
+
+        .remember-me-section {
+          margin-bottom: 30px;
+
+          .remember-me-group {
+            float: left;
+            color: #abafb4;
+            font-size: 14px;
+
+            input[type="checkbox"] {
+              display: inline;
+              margin: 3px;
+            }
+
+            label {
+              display: inline;
+            }
+          }
+
+          .forgot-password {
+            float: right;
+            font-size: 14px;
+            color: #abafb5;
+          }
+        }
+
+        label {
+          display: block;
+        }
+
+        input[type="text"], input[type="password"] {
+          border: 1px solid #bfbfbf;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          padding: 9px 15px;
+          width: 100%;
+        }
+
+        .two-factor-help {
+          font-size: 13px;
+          margin-top: -10px;
+        }
+      }
+
+      .register-section {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 30px;
+        color: #abafb4;
+
+        a {
+          color: #429cd6;
+          border-bottom: 1px solid #429cd6;
+          padding-bottom: 2px;
+          margin-left: 3px;
+        }
+      }
+
+      .go-back-login {
+        font-size: 13px;
+        margin-top: -5px;
+
+        a {
+          color: #abafb5;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .confirm-button, .send-again-button {
+        border: 0;
+        color: white;
+        width: 240px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 9px 1px;
+        border-radius: 3px;
+        margin: 0 auto;
+        font-size: 16px;
+        display: block;
+        cursor: pointer;
+      }
+
+      .confirm-button {
+        background: #f3c257;
+      }
+
+      .two-factor-form {
+        .button-section {
+          margin-top: 20px;
+          text-align: center;
+
+          button {
+            display: inline-block;
+
+            &.send-again-button {
+              width: 165px;
+              background-color: #456fa0;
+            }
+
+            &.confirm-button {
+              width: 165px;
+            }
+          }
+        }
+
+        .success {
+          color: #0a9c0a;
+          width: 225px;
+          margin: 0 auto;
+          background: #cdf1cd;
+          border-radius: 18px;
+          padding: 5px 0;
+          margin-top: 19px;
+
+          a {
+            color: #0eb30e;
+            font-size: 18px;
+            padding-right: 12px;
+          }
+        }
+      }
+    }
+
+    .copyright-notice {
+      text-align: center;
+      position: absolute;
+      bottom: 25px;
+      width: 100%;
+      font-size: 13px;
+      color: #898989;
+
+      .company {
+        color: #429cd6;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+#transparency_page {
+  max-width: $content-section-width;
+  margin: 0 auto;
+
+  .graph-container {
+    width: 100%;
+    min-height: 500px;
+
+    .label {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 200;
+    }
+
+    img {
+      margin: 0 auto;
+      padding-top: 45px;
+      display: block;
+      max-width: 70%;
+
+      @media screen and (max-width: 1380px) {
+        max-width: 95%;
+      }
+    }
+  }
+}

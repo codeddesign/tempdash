@@ -1,0 +1,57 @@
+#publishers-page {
+  max-width: $content-section-width;
+  margin: 0 auto;
+
+  .head-stats-section {
+    margin-bottom: 40px;
+  }
+
+  #publishers-main {
+    margin-top: 55px;
+    position: relative;
+
+    .listings-section {
+      position: relative;
+
+      ul {
+        list-style: none;
+        display: flex;
+        font-size: 14px;
+        padding: 14px 0;
+        margin: 0 0 13px;
+        box-shadow: -1px 2px 11px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+
+        &.listing-headings {
+          box-shadow: none;
+          padding-top: 0;
+          padding-bottom: 0;
+          margin-bottom: 8px;
+        }
+
+        li {
+          padding-left: 18px;
+
+          &.publisher-listing { width: 16%; }
+          &.impressions-listing { width: 16%; }
+          &.ad-spend-listing { width: 16%; }
+          &.direct-listing { width: 16%; }
+          &.one-listing { width: 16%; }
+          &.two-listing { width: 16%; }
+          &.starting-cpm { width: 16%; }
+          &.eCPM-listing { width: 10%; }
+        }
+
+        &.listing {
+          background-color: white;
+
+          li {
+            &.ad-spend-listing, &.eCPM-listing, &.starting-cpm {
+              color: #57ba47;
+            }
+          }
+        }
+      }
+    }
+  }
+}

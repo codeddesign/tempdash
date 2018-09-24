@@ -1,0 +1,52 @@
+{
+  "sections": [
+    {
+      "machine_name": "main_nav",
+      "label": ""
+    }
+  ],
+  "items": [
+    {
+      "label": "Dashboard",
+      "icon": "/img/menu_icons/png/dashboard.png",
+      "section": "main_nav",
+      "url": "/",
+      "collapsed_label": "Dashboard"
+    },
+    {
+      "label": "Transparency",
+      "icon": "/img/menu_icons/png/transparency.png",
+      "section": "main_nav",
+      "url": "/dashboard/transparency",
+      "collapsed_label": "Publishers"
+    },
+    {
+      "label": "Payment History",
+      "icon": "/img/menu_icons/png/payeemanagement.png",
+      "section": "main_nav",
+      "url": "/dashboard/payments",
+      "collapsed_label": "Payments"
+    },
+    {
+      "label": "Payee Management",
+      "icon": "/img/menu_icons/png/payeemanagement.png",
+      "section": "main_nav",
+      "url": "/dashboard/payments",
+      "collapsed_label": "Payments"
+    },
+    {
+      "label": "Publishers",
+      "icon": "/img/menu_icons/png/publishers.png",
+      "section": "main_nav",
+      "url": "/dashboard/publishers",
+      "collapsed_label": "Publishers"
+    },
+    {
+      "label": "User Management",
+      "icon": "/img/menu_icons/png/usermanagement.png",
+      "section": "main_nav",
+      "url": "/users/management",
+      "collapsed_label": "User Management"
+    }
+  ]
+}

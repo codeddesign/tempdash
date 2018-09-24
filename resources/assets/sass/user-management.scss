@@ -1,0 +1,360 @@
+#user_management {
+  max-width: $content-section-width;
+  margin: 0 auto;
+  padding-bottom: 150px;
+
+  h1 {
+    text-align: left;
+    color: #4899d4;
+    font-size: 24px;
+  }
+
+  .sub-stats-section {
+    background-color: white;
+    padding: 17px 50px;
+    margin-bottom: 30px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        .label {
+          color: #4899d4;
+        }
+      }
+    }
+  }
+
+  .filter-search-section {
+    padding: 18px 25px 16px 34px;
+    background-color: #489bd8;
+    margin-bottom: 26px;
+    margin-top: 27px;
+
+    a {
+      color: white;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .filters {
+      font-size: 13px;
+      float: left;
+      display: flex;
+
+      .filter {
+        margin-right: 10px;
+
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          color: white;
+          border: 0;
+          cursor: pointer;
+          background: url(/img/icons/white_down_caret.png) no-repeat;
+          padding: 0 35px 0 2px;
+          background-size: 13px;
+          background-position: 90% 5px;
+        }
+      }
+    }
+
+    .search-section {
+      float: right;
+      border-bottom: 1px solid #88cef2;
+      padding-bottom: 6px;
+      margin-top: -6px;
+
+      img {
+        max-width: 17px;
+      }
+
+      input[type="text"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 0;
+        background: none;
+        color: white;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .add-user-button-section {
+    margin-bottom: 20px;
+
+    .add-user {
+      display: inline-block;
+      float: left;
+      -webkit-appearance: none;
+      border: 0;
+      background: #489ad8;
+      color: white;
+      cursor: pointer;
+      padding: 11px 20px;
+      font-size: 13px;
+      border-radius: 3px;
+      box-shadow: -1px 2px 11px rgba(0, 0, 0, 0.15);
+
+      img {
+        max-width: 12px;
+        margin-top: -3px;
+        margin-right: 10px;
+      }
+    }
+
+    .view-mode {
+      display: flex;
+      float: right;
+      height: 45px;
+
+      button {
+        -webkit-appearance: none;
+        border: 0;
+        padding: 0 19px;
+        text-align: center;
+        cursor: pointer;
+
+        &.next {
+          background-color: #489ad8;
+          color: white;
+
+          img {
+            margin-left: 4px;
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .user-listings-section {
+
+    ul {
+      list-style: none;
+      margin: 0;
+      width: 100%;
+      padding: 0 0 0 55px;
+
+      li {
+        width: 20%;
+        display: inline-block;
+        padding: 16px;
+
+        &.icons {
+          width: 10%;
+        }
+
+        &.last-active {
+          width: 15%;
+        }
+
+        &.role {
+          width: 13%;
+        }
+
+        &.name {
+          width: 24%;
+        }
+
+        @media screen and (max-width: 1375px) {
+          padding-right: 7px;
+          padding-left: 7px;
+        }
+      }
+    }
+
+    .user-listings-heading {
+      position: relative;
+
+      .user-add-menu {
+        left: 18px;
+        top: 18px;
+      }
+
+      .add-button {
+        display: block;
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        border-radius: 100px;
+        left: 12px;
+        top: 12px;
+        -webkit-box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.3);
+        padding: 9px 0 0 9px;
+
+        img {
+          max-width: 24px;
+        }
+      }
+
+      ul {
+        background-color: white;
+        margin-bottom: 2px;
+
+        li {
+          padding: 35px 16px;
+          position: relative;
+
+          .label {
+            cursor: pointer;
+          }
+
+          img {
+            max-width: 10px;
+            margin-left: 20px;
+
+            @media screen and (max-width: 1375px) {
+              margin-left: 5px;
+            }
+          }
+
+          @media screen and (max-width: 1375px) {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    .listing {
+      background-color: white;
+      margin-bottom: 7px;
+      box-shadow: -1px 2px 11px rgba(0, 0, 0, 0.05);
+
+      ul {
+        li {
+          &.activity {
+            color: #00a0fc;
+          }
+
+          &.name {
+            div {
+              display: inline-block;
+            }
+
+            .online-indicator {
+              width: 12px;
+              height: 12px;
+              margin-right: 4px;
+              border-radius: 100px;
+              background-color: #ff3e3f;
+
+              &.online {
+                background-color: #7bb31a;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .drop-menu {
+      position: absolute;
+      min-width: 165px;
+      min-height: 100px;
+      z-index: 200;
+      background-color: white;
+      -webkit-box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.3);
+      box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.3);
+      top: 65px;
+
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: block;
+          padding: 0;
+          width: 100%;
+
+          a {
+            display: block;
+            width: 100%;
+            padding: 7px 10px;
+            color: #7991aa;
+
+            &:hover {
+              text-decoration: none;
+              color: white;
+              background-color: #1d344f;
+            }
+          }
+        }
+      }
+
+      &.search {
+        .search-icon {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          z-index: 150;
+          transform: scale(1.25);
+        }
+
+        ul {
+          li {
+            font-size: 13px;
+
+            a {
+              padding: 1px 10px;
+            }
+
+            &:last-of-type {
+              a {
+                padding-bottom: 7px;
+              }
+            }
+
+            &:nth-child(2) {
+              a {
+                padding-top: 7px;
+              }
+            }
+
+            input[type="text"] {
+              width: 100%;
+              font-size: 13px;
+              padding: 5px 30px 5px 9px;
+              color: #969696;
+              border: none;
+              border-bottom: 1px solid #e6e6e6;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+            }
+          }
+        }
+      }
+    }
+
+    .inline-editing-input {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      border-bottom: 1px solid #bfbfbf;
+      width: 80%;
+    }
+
+    select.inline-editing-input {
+      background: url(/img/icons/down_caret.svg) no-repeat;
+      background-size: 13px;
+      background-position: 90% 5px;
+      border-radius: 0;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 1300px) {
+      font-size: 13px;
+    }
+  }
+
+  @import "create-update-user-modal";
+}

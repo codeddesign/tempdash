@@ -1,0 +1,205 @@
+.auth-contact-page {
+  .top-section {
+    padding-top: 65px;
+    background-color: white;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #dddddd;
+
+    .search-area {
+      h1 {
+        font-size: 24px;
+        text-align: center;
+        margin: 0 0 16px 0;
+        padding: 0;
+        font-weight: bold;
+      }
+
+      p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        color: $blue;
+      }
+
+      .search-input {
+        display: flex;
+        max-width: 55%;
+        border: 1px solid $light-blue;
+        height: 45px;
+        margin: 45px auto 0;
+        border-radius: 3px;
+        background-color: #f5f9fd;
+
+        .search-icon-container {
+          width: 45px;
+          height: 100%;
+          padding: 9px 0 0 11px;
+          background-color: #f5f9fd;
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+
+          i {
+            font-size: 25px;
+            color: $dark-blue;
+          }
+        }
+
+        .input-container {
+          width: 90%;
+
+          input {
+            border: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            color: #404446;
+            background-color: #f5f9fd;
+          }
+        }
+      }
+    }
+  }
+
+  .mid-section {
+    min-height: 400px;
+    padding-top: 60px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 80px;
+
+    .container {
+      max-width: 775px;
+
+      .support-type-pane {
+        width: 325px;
+        height: 240px;
+        text-align: center;
+        padding-top: 33px;
+        background-color: $medium-blue;
+        color: white;
+        cursor: pointer;
+
+        h5 {
+          margin-top: 12px;
+        }
+
+        .type-desc {
+          margin-top: 10px;
+        }
+
+        i {
+          font-size: 50px;
+          color: $light-blue;
+        }
+
+        div.view-button {
+          background-color: white;
+          color: $medium-blue;
+          padding: 7px 28px;
+          width: 30%;
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        &:hover, &.active {
+          background-color: $light-blue;
+          i {
+            color: $medium-blue;
+          }
+        }
+      }
+
+      .top-listing-section {
+        margin-top: 60px;
+
+        .no-results-notice {
+          text-align: center;
+        }
+
+        .topic-listing {
+          width: 100%;
+          padding: 0px 18px 0 35px;
+          border: 1px solid #d4d4d4;
+          margin-bottom: 11px;
+          background-color: white;
+
+          .topic-content {
+            padding: 0 0 15px 0;
+            color: #a0a0a0;
+          }
+
+          .topic-listing-expand {
+            display: inline-block;
+            font-size: 15px;
+            height: 5px;
+            float: right;
+
+            i {
+              font-size: 24px;
+              color: $blue;
+            }
+          }
+
+          .topic {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 15px;
+            color: #6a6a6a;
+          }
+
+          .topic-listing-expand, .topic {
+            padding: 14px 0;
+          }
+        }
+
+        .load-more-button {
+          display: block;
+          width: 195px;
+          text-align: center;
+          background-color: $dark-blue;
+          color: white;
+          margin: 0 auto;
+          font-size: 15px;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+
+  .lower-section {
+    padding-top: 50px;
+    padding-bottom: 140px;
+    background-color: white;
+
+    .container {
+      max-width: 775px;
+
+      h4 {
+        text-align: center;
+        margin-bottom: 35px;
+        font-weight: bold;
+      }
+
+      .buttons-row {
+        text-align: center;
+
+        .footer-button {
+          text-align: center;
+          background-color: $button-background;
+          color: white;
+          margin: 0 auto;
+          font-size: 15px;
+          padding: 10px 23px;
+
+          &.create-support-ticket {
+            background-color: $orange;
+          }
+
+          &.send-us-a-tweet {
+            background-color: $light-blue;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+#side-menu {
+
+  $side-menu-width: 270px;
+  $side-menu-background: #fff;
+  $side-menu-separator-color: #eceff3;
+  $side-menu-l2-background: #f5f7f9;
+  $side-menu-l3-background: #eceff4;
+
+  width: $side-menu-width;
+  min-height: 100vh;
+  background-color: $side-menu-background;
+  overflow-y: hidden;
+  padding-bottom: 150px;
+
+  .manage-account-button-section {
+
+    padding-left: 73px;
+    margin: 0 auto 15px;
+
+    a {
+      background-color: #f4c257;
+      color: white;
+      display: block;
+      width: 152px;
+      text-align: center;
+      padding: 3px 0;
+      border-radius: 4px;
+      margin-left: -15px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .menu-container {
+    width: 100%;
+
+    .logo-area {
+      padding: 30px 0 0 0;
+      height: 84px;
+      background-color: #fff;
+      position: relative;
+      margin-bottom: 14px;
+      border-bottom: 1px solid #eceff3;
+
+      .collapse-button {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        width: 18px;
+        text-align: right;
+        z-index: 100;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      a {
+        img.logo {
+          max-width: 47%;
+          margin-left: 57px;
+        }
+      }
+    }
+
+    h4.nav-title {
+      text-transform: uppercase;
+      color: #647ea9;
+      font-size: 11px;
+      padding: 27px 20px 17px 22px;
+      border-top: 1px solid $side-menu-separator-color;
+      margin: 0;
+    }
+
+    ul.nav-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: "SFCompactDisplayUltraLight", Helvetica, sans-serif;
+
+      li {
+        .menu-item {
+          display: flex;
+          position: relative;
+          padding-left: 20px;
+          font-size: 20px;
+
+          img.caret {
+            width: 13px;
+            height: 13px;
+            display: block;
+            margin-top: 16px;
+            position: absolute;
+            right: 18px;
+            cursor: pointer;
+          }
+
+          img.icon {
+            width: 17px;
+            height: 17px;
+            display: block;
+            margin-top: 50px;
+            margin-right: 17px;
+          }
+
+          a {
+            color: #7991aa;
+            line-height: 115px;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+
+        &.selected {
+          a {
+            color: #599ce3;
+            font-family: "SFCompactDisplayBold", Helvetica, sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
+
+      ul.level-two {
+        padding: 0;
+        margin: 0;
+
+        li {
+          border-bottom: 0;
+          background-color: $side-menu-l2-background;
+
+          a {
+            color: #adbaca;
+          }
+
+          ul.level-three {
+            list-style: none;
+            padding: 0;;
+            margin: 0;
+
+            li {
+              border-bottom: 0;
+              background-color: $side-menu-l3-background;
+
+              .menu-item {
+                padding-left: 50px;
+              }
+
+              img.icon {
+                max-width: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .collapsed-menu-item-section {
+    display: none;
+    position: relative;
+
+    .logo-section {
+      border-bottom: 1px solid #e6e6e6;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      height: 84px;
+
+      img {
+        max-width: 55%;
+      }
+    }
+
+    .expand-button {
+      position: absolute;
+      top: 20px;
+      left: 8px;
+    }
+
+    .menu-icons-section {
+      position: absolute;
+      top: 136px;
+      left: 0;
+      width: 100%;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 20px 0 0;
+
+        li {
+          width: 100%;
+          text-align: center;
+          height: 85px;
+          padding-top: 25px;
+
+          a {
+            position: relative;
+
+            img {
+              width: 15px;
+            }
+          }
+
+          &.selected {
+            border-right: 4px solid #599ce3;
+          }
+        }
+      }
+    }
+
+    .account-button {
+      background-color: #f4c257;
+      width: 73%;
+      margin: 0 auto;
+      display: block;
+      height: 32px;
+      text-align: center;
+      border: none;
+      margin-top: 11px;
+      padding-top: 3px;
+      border-radius: 3px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+
+      img {
+        max-width: 26.5%;
+      }
+    }
+  }
+
+  &.collapsed {
+    width: 60px;
+
+    .menu-container {
+      display: none;
+    }
+
+    .collapsed-menu-item-section {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+#financial-page {
+
+  max-width: $content-section-width;
+  margin: 0 auto;
+  padding-bottom: 130px;
+
+  h1 {
+    color: #4899d4;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .filter-search-section {
+    background-color: #4899d4;
+    padding: 12px 22px;
+    margin-bottom: 20px;
+
+    .filter-section {
+      background-color: #4899d4;
+      float: left;
+
+      select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        color: white;
+        border: 0;
+        background: url(/img/icons/white_down_caret.png) no-repeat;
+        width: 100px;
+        background-size: 12px;
+        background-position-x: 88%;
+        background-position-y: 3px;
+        font-size: 12px;
+        margin-right: 10px;
+      }
+    }
+
+    .search-section {
+      float: right;
+      border-bottom: 1px solid #88cef2;
+      padding-bottom: 6px;
+      margin-top: -6px;
+
+      img {
+        max-width: 17px;
+      }
+
+      form {
+        input[type="text"] {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          border: 0;
+          background: none;
+          color: white;
+
+          &::placeholder {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .command-button-section {
+    margin-bottom: 10px;
+
+    button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      font-size: 13px;
+      cursor: pointer;
+      border: 0;
+      padding: 8px 15px;
+    }
+
+    .command-buttons {
+      float: left;
+
+      button {
+        background-color: #4899d4;
+        color: white;
+        border-radius: 2px;
+        box-shadow: -1px 1px 7px rgba(0,0,0,0.2);
+
+        &.edit-payout-options {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .view-buttons {
+      float: right;
+
+      .next {
+        background-color: #4899d4;
+        color: white;
+        span {
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  .payments-list-section {
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    font-size: 13px;
+
+    .check-box-header { width: 4%; }
+    .date-header { width: 18%; }
+    .payout-method-header { width: 20%; }
+    .pay-schedule-header { width: 20%; }
+    .pay-period-header { width: 18%; }
+    .amount-header { width: 8%; }
+
+    ul {
+      li {
+        display: inline-block;
+      }
+    }
+
+    .header-section {
+      padding: 10px 20px;
+    }
+
+    .listings {
+      margin-bottom: 20px;
+
+      .listing {
+        background-color: white;
+        padding: 16px 20px;
+        box-shadow: -1px 2px 11px rgba(0, 0, 0, 0.05);
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

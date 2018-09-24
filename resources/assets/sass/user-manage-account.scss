@@ -1,0 +1,134 @@
+#user_account_management {
+  max-width: $content-section-width;
+  margin: 0 auto;
+
+  .account-name-area {
+    margin-bottom: 25px;
+
+    div {
+      display: inline-block;
+      vertical-align: top;
+
+      &.account-photo-section {
+        max-width: 70px;
+        max-height: 70px;
+        margin-right: 10px;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 3px;
+        }
+      }
+
+      &.account-name-section {
+        margin-bottom: 35px;
+
+        h3 {
+          font-size: 16px;
+          margin-bottom: 3px;
+          color: #686868;
+          text-transform: uppercase;
+        }
+
+        h2 {
+          font-size: 24px;
+          color: #4e4e4e;
+          font-family: "SFCompactDisplayUltraLight";
+
+          strong {
+            color: black;
+            font-family: "SFCompactDisplayRegular";
+          }
+        }
+      }
+    }
+  }
+
+  .account-details-section {
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    margin: 0 auto 20px;
+
+    .account-detail {
+      margin-bottom: 20px;
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .form-area {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 100px;
+
+    .invalid-form-feedback {
+      margin-left: 10px;
+      display: inline-block;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      border-bottom: 1px solid black;
+      padding-bottom: 6px;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .form-section {
+      margin-bottom: 25px;
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+
+      table.form-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        tr {
+          td {
+            border-top: 1px solid #bfbfbf;
+            padding: 4px 0px;
+
+            input, select {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              border: none;
+              background-color: white;
+              width: 315px;
+
+              &::placeholder {
+                color: #cfcfcf;
+              }
+            }
+
+            &.form-label-cell {
+              color: #a4a4a4;
+              width: 350px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .button-section {
+    button {
+      cursor: pointer;
+      padding: 5px 16px;
+    }
+  }
+}
